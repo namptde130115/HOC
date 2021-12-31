@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Component1 } from './component-1/index';
+import { EnhancedComponent2 } from './component-2/index';
+import { Hoc } from './hoc/index';
+
+// const TestHoc = Hoc(Component2);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Component1 />
+      {/* <Component2 /> */}
+      {/* <TestHoc /> */}
+      <EnhancedComponent2 />
     </div>
   );
 }
